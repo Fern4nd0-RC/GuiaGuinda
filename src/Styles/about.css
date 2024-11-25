@@ -1,0 +1,71 @@
+/* Contenedor principal */
+.main-container-about {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 93vh;
+}
+
+/* Contenido principal */
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Sección de texto */
+.text-section-about {
+  flex: 1;
+  max-width: 1200px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #9d2449;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Lista de características */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features-list i {
+  margin-right: 10px;
+  color: #9d2449;
+}
+
+/* Botón de llamada a la acción */
+.cta-button-about {
+  background-color: #9d2449;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-about:hover {
+  background-color: #7b1b38;
+}

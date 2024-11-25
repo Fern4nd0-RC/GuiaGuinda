@@ -1,0 +1,12 @@
+.carousel-container {
+    max-width: 92%;
+    margin: 20px auto; /* Centrar el carrusel horizontalmente */
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para un mejor acabado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    object-fit: cover;
+  }

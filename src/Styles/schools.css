@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.main-container-menu {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  /* Contenido principal */
+  .content-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Sección de Escuelas */
+  .section {
+    text-align: center;
+  }
+  
+  .section h1 {
+    font-size: 36px;
+    color: #9d2449;
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor en forma de cuadrícula */
+  .school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Tarjeta de escuela */
+  .school-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .school-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo del logo */
+  .school-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo del nombre de la escuela */
+  .school-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  

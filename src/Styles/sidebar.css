@@ -1,0 +1,58 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  background-color: #9d2449;
+  z-index: 11; /* Ensures it appears above other content */
+  transform: translateX(-100%); /* Hidden by default */
+  transition: transform 0.3s ease-in-out;
+  padding-top: 40px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for better visibility */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Visible when 'open' class is added */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+  cursor: pointer;
+}
+
+/* Close button styles */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #a9a9a9;
+}

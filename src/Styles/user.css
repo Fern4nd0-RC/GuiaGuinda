@@ -1,0 +1,172 @@
+/* Contenedor principal */
+.user-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Layout principal */
+  .user-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sección del perfil */
+  .profile-section {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .user-button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-button:hover {
+    background-color: #45a049;
+  }
+  
+  .user-button-secondary {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-button-secondary:hover {
+    background-color: #e53935;
+  }
+  
+  /* Sección de información */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .calendar-container,
+  .events-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .selected-date {
+    font-weight: bold;
+    color: #9d2449;
+  }
+  
+  /* Sección de estadísticas */
+  .stats-section {
+    grid-column: span 2;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/* Estilo para la etiqueta de subir archivo */
+.upload-label {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .upload-label:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ocultar el input de archivo por defecto */
+  .user-file-input {
+    display: none;
+  }
+
+  /* Cursos Completados */
+.courses-section {
+    grid-column: span 2;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .course-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card h4 {
+    font-size: 18px;
+    color: #9d2449;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  

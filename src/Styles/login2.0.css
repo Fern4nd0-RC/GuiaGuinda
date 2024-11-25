@@ -1,0 +1,125 @@
+/* Modal overlay (background) */
+.login-modal-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Modal container */
+  .login-modal {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Modal title */
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .input-email {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-email:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Primary button */
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+  }
+  
+  /* Social buttons */
+  .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .google {
+    background: #db4437;
+    color: white;
+  }
+  
+  .google:hover {
+    background: #c23321;
+  }
+  
+  /* Divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+  }
+  
+  /* Links */
+  .link {
+    color: #3b82f6;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
